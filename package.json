@@ -1,0 +1,42 @@
+{
+  "name": "presentation",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base=web-mobile-2023-openfeature",
+    "postbuild": "shx cp -r ./assets/backgrounds ./dist/assets",
+    "gh-publish": "gh-pages --dist ./dist",
+    "export": "slidev export --dark",
+    "format": "pnpm -w format"
+  },
+  "dependencies": {
+    "@slidev/cli": "0.42.5",
+    "@slidev/client": "0.42.5",
+    "@slidev/theme-default": "0.21.2",
+    "@slidev/theme-seriph": "0.21.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "playwright-chromium": "^1.33.0",
+    "shx": "^0.3.4"
+  },
+  "slidev": {
+    "default": {
+      "theme": "default",
+      "transition": "",
+      "aspectRatio": "16/9",
+      "canvasWidth": 960,
+      "fonts": {
+        "provider": "google",
+        "sans": "Lexend",
+        "serif": "Lexend",
+        "mono": "Roboto Mono"
+      },
+      "highlighter": "shiki",
+      "lineNumbers": false,
+      "drawings": {
+        "persist": false
+      }
+    }
+  }
+}
