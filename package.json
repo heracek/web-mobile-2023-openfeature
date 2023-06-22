@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base=web-mobile-2023-openfeature",
-    "postbuild": "shx cp -r ./assets/backgrounds ./dist/assets",
+    "postbuild": "shx cp -r ./assets/backgrounds ./assets/images ./dist/assets",
     "gh-publish": "gh-pages --dist ./dist",
     "export": "slidev export --dark",
     "format": "pnpm -w format"
